@@ -1,0 +1,152 @@
+h2 {
+  text-align: center;
+
+}
+
+.formulauro {
+  width: 100%;
+  height: 480px;
+  min-width: 200px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2dd836;
+  border: solid 3px black;
+  border-top-right-radius: 100%;
+  border-top-left-radius: 100%;
+  margin: 20px auto;
+}
+
+#pedras {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#pedras:hover::after {
+  content: "PEDRAS";
+  position: absolute;
+}
+
+#pedras input {
+  width: 100px;
+  height: 20px;
+  text-align: center;
+  background-color: black;
+  border: none;
+  border-radius: 3px;
+  color: white;
+}
+
+#nome {
+  width: 100%;
+  position: relative;
+}
+
+#nome:hover::after {
+  content: "NOME";
+  position: absolute;
+}
+
+#nome input {
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  background-color: inherit;
+  border: none;
+}
+
+#cores {
+  width: 100%;
+  display: flex;
+  justify-content: space-around ;
+}
+
+#cores:hover::after {
+  content: "CORES";
+  position: absolute;
+}
+
+#cores.olho-esquerda input{
+  border-radius: 100%;
+  border: solid 3px red;
+  width: 30px;
+  height: 30px;
+  padding: 20px 30px 20px 5px;
+  background-color: white;
+  -webkit-appearance: none;
+}
+
+#cores.olho-direita input {
+  border-radius: 100%;
+  border: solid 3px red;
+  width: 30px;
+  height: 30px;
+  padding: 20px 5px 20px 30px;
+  background-color: white;
+  -webkit-appearance: none;
+}
+
+#cores input::-webkit-color-swatch {
+  border: none;
+  border-radius: 100%;
+  padding: 0;
+}
+#cores input::-webkit-color-swatch-wrapper {
+  border: none;
+  border-radius: 100%;
+  padding: 0;
+}
+
+#tipo-pedras {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: inherit;
+}
+
+#tipo-pedras:hover::after {
+  content: "TIPOS DE PEDRAS";
+  position: absolute;
+  text-align: center;
+  width: 500px;
+}
+
+#tipo-pedras select {
+  width: 80px;
+  text-align: center;
+  text-align-last:center;
+  background-color: inherit;
+  border: solid 3px black;
+  border-top: none;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+
+#tipo-pedras select option {
+  text-align: center;
+}
+
+.formulauro button {
+  height: 20px;
+  width: 100%;
+  max-width: 200px;
+  background-color: RebeccaPurple;
+  border: solid 1px black;
+  border-radius: 3px;
+  color: white;
+  text-transform: uppercase;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

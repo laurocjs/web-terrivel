@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estilos.css" type="text/css">
+    <title>Ta saindo da jaula o monstro</title>
+  </head>
+  <body>
+
+    <h2>GET</h2>
+    <form class="formulauro" action="http://terrivel.herokuapp.com/monster" method="GET">
+      <section id="nome">
+        <input type="text" name="nome" value="Greeeaaaan">
+      </section>
+      <section id="pedras">
+        <input type="number" name="num_pedras" value="1" min="0">
+        <input type="number" name="tam_pedras" value="3" min="1"  max="7">
+      </section>
+      <section id="cores" class="olho-direita">
+        <input type="color" name="corCeu1" value="#000000">
+        <input type="color" name="corCeu2" value="#000000">
+      </section>
+      <button>Enviaaaaaaaaaar!</button>
+      <section id="tipo-pedras">
+        <select name="tipo_pedras">
+          <option value="marroada">Marroada</option>
+          <option value="ametista">Ametista</option>
+          <option value="topazio">Topázio</option>
+          <option value="espinela">Espinela</option>
+        </select>
+        <select name="tipo_pedras_sortidas">
+          <option value="não">Não</option>
+          <option value="sim">Sim</option>
+        </select>
+      </section>
+    </form>
+
+    <h2>POST</h2>
+    <form class="formulauro" action="http://terrivel.herokuapp.com/monster" method="POST">
+      <section id="nome">
+        <input type="text" name="nome" value="Greeeaaaan">
+      </section>
+      <section id="pedras">
+        <input type="number" name="num_pedras" value="1" min="0">
+        <input type="number" name="tam_pedras" value="3" min="1"  max="7">
+      </section>
+      <section id="cores" class="olho-esquerda">
+        <input type="color" name="corCeu1" value="#fcb467">
+        <input type="color" name="corCeu2" value="#f7f794">
+      </section>
+      <button>Enviaaaaaaaaaar!</button>
+      <section id="tipo-pedras">
+        <select name="tipo_pedras">
+          <option value="marroada">Marroada</option>
+          <option value="ametista">Ametista</option>
+          <option value="topazio">Topázio</option>
+          <option value="espinela">Espinela</option>
+        </select>
+        <select name="tipo_pedras_sortidas">
+          <option value="não">Não</option>
+          <option value="sim">Sim</option>
+        </select>
+      </section>
+    </form>
+
+
+  </body>
+</html>
